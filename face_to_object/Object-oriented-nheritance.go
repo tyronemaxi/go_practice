@@ -8,11 +8,11 @@ type Human struct {
 	name, sex string
 }
 
-func (h Human) Eat() {
+func (h *Human) Eat() {
 	fmt.Println("human is eating")
 }
 
-func (h Human) work() {
+func (h *Human) work() {
 	fmt.Println("human is working")
 }
 
